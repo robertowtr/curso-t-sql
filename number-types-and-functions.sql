@@ -82,3 +82,12 @@ declare @myvar as numeric(7,3) = -456
 select abs(@myvar), sign(@myvar)
 
 --Tem também as funções trigonométricas
+
+--Conversão
+select cast(3 as decimal(5, 2))
+select cast(3.45 as int)
+--PONTO DE ATENÇÃO NA DIVISÃO
+--A divisão de dois inteiros resulta em um inteiro
+select 3/2
+--Para corrigir, fazer uma conversão para numérico
+select 3.0/2
