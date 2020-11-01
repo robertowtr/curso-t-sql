@@ -91,3 +91,14 @@ select cast(3.45 as int)
 select 3/2
 --Para corrigir, fazer uma conversão para numérico
 select 3.0/2
+
+
+--Objetos do banco
+select *
+  from sys.all_columns;
+
+select *
+  from sys.all_objects;
+
+select *
+  from sys.all_views;
