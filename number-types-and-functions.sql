@@ -45,3 +45,40 @@ Por padrão são com 4 casas decimais
 */
 declare @numero money = 1234.12121
 select @numero
+
+/*Funções matemáticas*/
+declare @myvar as numeric(7,3) = 3
+
+--exponenciação
+select POWER(@myvar, 2)
+
+--quadrado
+select square(@myvar)
+
+--raiz quadrada
+select sqrt(@myvar)
+
+go
+
+--Funções de arredondamento
+declare @myvar as numeric(7,3) = 12.345
+
+select floor(@myvar) as godown
+select ceiling(@myvar) as goup
+select round(@myvar, 1) as depends_on_digits
+select round(@myvar, -1) as tens --desconta para a dezena mais próxima
+set @myvar = 16.6
+select round(@myvar, -1) as tens --desconta para a dezena mais próxima
+
+--Outras funções
+select pi() as pi
+select exp(1) as e
+
+
+--Funções para valores absolutos
+--abs retorna o valor absoluto e sign retorna o sinal
+go
+declare @myvar as numeric(7,3) = -456
+select abs(@myvar), sign(@myvar)
+
+--Tem também as funções trigonométricas
