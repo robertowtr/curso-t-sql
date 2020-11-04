@@ -1,0 +1,2 @@
+--@@ROWCOUNT da o retorno de quantos registros foram afetados na última manutenção de dados
+--O with eh igual ao Oracle

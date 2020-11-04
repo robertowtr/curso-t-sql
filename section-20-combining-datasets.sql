@@ -1,0 +1,3 @@
+--union e union all tem o mesmo comportamento do oracle
+--except retorna os dados que estão no primeiro select, e não estão no segundo sql
+--intersect retorna os dados que estão no primeiro select, e também estão no segundo sql
